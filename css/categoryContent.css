@@ -1,0 +1,244 @@
+a{
+    text-decoration: none;
+}
+/* ********************Top Category********************** */
+.top-category{
+    border-bottom: 1px solid rgb(210, 207, 207);
+    margin-top: 1em;
+}
+
+.title-category{
+    /* display: block; */
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.top-r-category{
+    font-size: 14px;
+    color: #707070;
+    padding: 0;
+}
+
+.top-r-category span{
+    display: flex;
+    border-right: 1px solid rgba(133, 132, 132, 0.3);
+    width: 100%;
+    height: 2.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-r-category-sapxep{
+    font-size: 14px;
+    color: #707070;
+    padding: 0;
+}
+
+.top-r-category-sapxep label {
+    position: relative;
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-r-category-sapxep ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    top:2.4em;
+    right: 0;
+    padding: 0;
+    z-index: 2;
+    background-color: white;
+    width: 250px;
+}
+
+.top-r-category-sapxep ul li{
+    width: 100%;
+    padding: 7px 5px;
+    border: 1px solid rgba(133, 132, 132, 0.3);
+    cursor: pointer;
+}
+
+.top-r-category span:hover{
+    cursor: pointer;
+    border: 1px solid rgba(133, 132, 132, 0.3);
+}
+
+.top-r-category-sapxep label:hover{
+    cursor: pointer;
+    border: 1px solid rgba(133, 132, 132, 0.3);
+}
+
+.top-r-category-sapxep label:hover ul{
+    display: block;
+}
+
+.top-r-category-sapxep label ul li:hover{
+    background-color: rgb(223, 226, 228);
+}
+
+
+/* *****************Content category********************** */
+.content-category{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-box{
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 24px auto ; 
+}
+
+.p-img-box{
+    position: relative;
+}
+
+.p-img-box span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #252525;
+}
+
+.p-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.p-details-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-type,
+.p-price{
+    margin: 10px 0 0 10px;
+}
+
+.p-type a{
+    color: rgb(117, 115, 115);
+    font-size: 16px;
+}
+
+.p-price a{
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.p-price span{
+    text-decoration: line-through;
+    color: #9e9e9e;
+}
+
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #252525;
+    font-weight: 700;
+    border-radius: 20px;
+
+}
+
+.buy-btn:hover{
+    color: #FFFFFF;
+    background-color: #f94046;
+    transition: all ease 0.3s;
+}
+
+.p-img-box:hover .overlay{
+    visibility: visible;
+    animation: fade ease 0.5s;
+}
+
+/* *************Bottom category*************** */
+.bottom-category{
+    margin-top: 30px;
+}
+
+.pagination{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pagination li{
+    color: #707070;
+    font-size: 14px;
+    padding: 5px 12px;
+    border: 0.5px solid #ccc;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.pagination li:hover{
+    background-color: #f2efef;
+}
+
+.viewed-products{
+    display: flex;
+    justify-content: end;
+    height: 32px;
+}
+
+.viewed-products a{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #252525;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        padding-top: 3em;
+    }
+    .top-r-category span,.top-r-category-sapxep label{
+        height: 3em;
+    }
+    .top-r-category-sapxep ul{
+        top:2.9em
+    }
+    .viewed-products,.pagination{
+        justify-content: center;
+    }
+}

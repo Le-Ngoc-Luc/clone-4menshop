@@ -1,0 +1,276 @@
+.payment-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#form-order .form-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+legend{
+    font-size: 1.1rem;
+    border-bottom: 1px solid #dcdbdb;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#form-order .form-label{
+    width: 35%;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+#form-order .form-control-select{
+    position: relative;
+    width: 65%;
+}
+
+#form-order .form-control-select .form-control{
+    width: 100%;
+}
+
+
+#form-order .form-control-select ul{
+    position: absolute;
+    display: none;
+    width: 100%;
+    max-height: 20rem;
+    overflow: auto;
+    padding: 0;
+    z-index: 2;
+}
+
+#form-order .form-control-select ul.active{
+    display: block;
+}
+
+#form-order .form-control-select li{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 40px;
+    font-size: 0.9em;
+    background-color: #ededed;
+    transition: 0.5s;
+}
+
+#form-order .form-control-select li:hover,
+#form-order .form-control-select li.active{
+    background-color: #898787;
+    color: white;
+    
+}
+
+#form-order .form-control
+{
+    position: relative;
+    width: 65%;
+}
+
+#form-order span.form-control{
+    position: relative;
+    width: 65%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#form-order .form-control i{
+    position: absolute;
+    top: 50%;
+    right: 0.6rem;
+    transform: translateY(-50%);
+}
+
+#form-order .form-message{
+    width: 65%;
+    margin-left:35%;
+}
+
+.form-control-select option{
+    color: #4d4b4b;
+    height: 25px;
+
+}
+
+#form-order textarea{
+    width: 65%;
+    outline: none;
+    padding: 4px 12px;
+    color: #4d4b4b;
+
+}
+
+.radio-input{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-input label{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid #e8e6e6;
+    border-radius: 0.6rem;
+    padding: 0.3rem 0.5rem;
+    margin: 0.4rem 0;
+    cursor: pointer;
+}
+
+.radio-input label:hover{
+    border-color: #6a6969
+}
+
+.radio-input label img{
+    height: 3rem;
+    margin: 0 1rem;
+    object-fit: cover;
+}
+
+.btn-pay{
+    float: right;
+    width: 40%;
+    border: none;
+    background-color: #303030;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.7rem 0;
+    transition: 0.3s;
+}
+
+.btn-pay:hover{
+    background-color: #6a6969
+}
+
+/* *********************************infor Payment***************** */
+
+.order-right{
+    background-color: #faf8f8;
+    padding: 1rem 0.5rem;
+}
+
+table{
+    font-size: 0.8rem;
+}
+
+th{
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem;
+}
+
+td{
+    border-top: 1px solid #eee;
+    padding: 0.5rem;
+}
+
+
+.tbl-cart-infor{
+    width: 100%;
+}
+
+.tbl-td-img{
+    width: 10%;
+    overflow: hidden;
+}
+
+.tbl-td-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.tbl-td-info-product{
+    width: 45%;
+}
+
+.tbl-td-info-product span{
+    font-weight: 500;
+}
+
+.tbl-td-quantity{
+    width: 10%;
+}
+
+.tbl-td-quantity input{
+    min-width: 40px;
+}
+
+.tbl-td-quantity input,
+.tbl-td-delete button{
+    padding: 0.3rem;
+    outline: none;
+    border: 1px solid #eee;
+    background-color: unset;
+}
+
+.tbl-td-delete button:hover{
+    background-color: #b9b7b7;
+}
+
+.tbl-td-quantity input{
+    width: 100%;
+}
+
+.tbl-td-price{
+    width: 14%;
+}
+
+.tbl-td-sum{
+    width: 14%;
+}
+
+.tbl-td-delete{
+    width: 7%;
+}
+
+.form-group-payment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem ;
+    margin: 1rem 0;
+}
+
+.form-group-payment .form-control{
+    width: 70%;
+}
+
+.form-group-payment .form-button{
+    width: 30%;
+    height: 40px;
+    border: none;
+    background-color: #f0b930;
+}
+
+.sum-detailt{
+    border-bottom: 1px solid #d4d2d2;
+}
+
+.sum-detailt,.sum-total {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0.3rem 1rem;
+}
+
+.sum-detailt-name,.sum-total-name{
+    width: 75%;
+}
+
+.sum-total-name, .sum-total-value{
+    font-weight: 700;
+}
+
+.sum-detailt-value, .sum-total-value{
+    width: 25%;
+    text-align: right;
+}
+
+.sum-total-value{
+    color: #c34747;
+}

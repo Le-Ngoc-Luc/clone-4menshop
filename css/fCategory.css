@@ -1,0 +1,17 @@
+.fCategory .block-content{
+    /* height: 200px; */
+    margin-top: 1.5em;
+    overflow: hidden;
+}
+.block-content img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    object-fit: contain;
+}
+
+.block-content img:hover{
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+}
