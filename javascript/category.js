@@ -1,12 +1,12 @@
-const listProductElement = document.querySelector('.list-product');
-var html = '';
+const listProductElement = document.querySelector(".list-product");
+var html = "";
 for (let i = 0; i < 24; i++) {
-    html += `<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+  html += `<div class="col-12 col-sm-6 col-md-4 col-lg-3">
     <div class="product-box">
         <!-- img box -->
         <div class="p-img-box">
             <span>-13%</span>
-            <img src="./image/ao-nam-2.jpg" alt="">
+            <img src="./image/product-2-1.jpg" alt="">
             <div class="overlay">
                 <a href="./product.html" class="buy-btn">Buy Now</a>
             </div>
